@@ -1,16 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 html,
 body {
-  padding: 0;
+  background-image: linear-gradient(to bottom right, #FDFCFB, #E2D1C3);
+  background-size: cover;
+  color: black;
+  font-family: "Poppins";
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+textarea {
+  background: #FFFFE0;
+  border: none;
   box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80px;
+  padding: 5px;
+  resize: none;
+  width: 100%;
+}
+
+textarea:focus {
+  background-color: #F0E68C;
+}
+
+form {
+  display: flex;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 12px;
+  box-shadow: inset 0 0 5px grey; 
+}
+
+::-webkit-scrollbar {
+  background: #E2D1C3;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FDFCFB;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
 }
